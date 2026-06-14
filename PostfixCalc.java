@@ -8,8 +8,8 @@ public class PostfixCalc {
                 str += ch;
             }
             if(ch == '+'){
-                int x = pile.pop();
                 try{
+                    int x = pile.pop();
                     int y = pile.pop();
                     pile.push(x + y);
                 }catch(Exception e){
@@ -17,8 +17,8 @@ public class PostfixCalc {
                 }
             }
             if(ch == '-'){
-                int x = pile.pop();
                 try{
+                    int x = pile.pop();
                     int y = pile.pop();
                     pile.push(x - y);
                 } catch(Exception e) {
@@ -26,8 +26,8 @@ public class PostfixCalc {
                 }
             }
             if(ch == '*'){
-                int x = pile.pop();
                 try{
+                    int x = pile.pop();
                     int y = pile.pop();
                     pile.push(x * y);
                 } catch(Exception e) {
@@ -35,8 +35,8 @@ public class PostfixCalc {
                 }
             }
             if(ch == '/' || ch == '%'){
-                int x = pile.pop();
                 try{
+                    int x = pile.pop();
                     int y = pile.pop();
                     x = x / y;
                     pile.push(x);
